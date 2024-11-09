@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:lab12/ui.dart';
+import 'login.dart';
 
 void main() {
-  runApp(Ui());
+  runApp(MyApp());
 }
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: LoginPage(),
+    );
+  }
+}
